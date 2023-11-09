@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tower Defense Game</title>
+    <style>
+      #game-container {
+        position: relative;
+        width: 800px;
+        height: 600px;
+        background-image: url("map.png");
+        background-size: cover;
+      }
+    </style>
+    <script src="game.js"></script>
+    <!-- Move the script tag to the head section -->
+  </head>
+  <body>
+    <div id="game-container">
+      <img
+        id="enemy"
+        src="enemy.png"
+        alt="enemy"
+        style="position: absolute; left: 110px; top: -20px"
+      />
+    </div>
+
+    <div id="tower-menu">
+      <div class="tower-option">
+        <img src="Tower1.png" alt="Tower 1" id="tower1" class="tower-image" />
+        <button id="place-tower1">Place Tower 1</button>
+      </div>
+      <div class="tower-option">
+        <img src="Tower2.png" alt="Tower 2" id="tower2" class="tower-image" />
+        <button id="place-tower2">Place Tower 2</button>
+      </div>
+      <div class="tower-option">
+        <img src="Tower3.png" alt="Tower 3" id="tower3" class="tower-image" />
+        <button id="place-tower3">Place Tower 3</button>
+      </div>
+    </div>
+    <script src="TowerDefense.js"></script>
+  </body>
+</html>
